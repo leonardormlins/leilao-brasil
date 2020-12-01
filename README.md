@@ -1,7 +1,3 @@
-# leilao-brasil
-Um sistema de leilão via console em Java
-
-
 
 
 ## Classes
@@ -83,5 +79,64 @@ Classe do tipo abstrata
 - placa: String
 - combustivel: string
 - cc: int
+- cor: string
 **Métodos**
 - getters() e setters()
+
+### Carro
+Classe extendida de Veiculo
+**Atributos**
+- portas: int
+- aroRoda: int
+- arCondicionado: boolean
+- direcaoHidraulica: boolean
+**Métodos**
+- getters() e setters()
+
+### Motorcicleta
+Classe extendida de Veiculo
+**Atributos**
+- aroRoda: int
+- partidaEletrica: boolean
+**Métodos**
+- getters() e setters()
+
+### Leilao
+Classe principal
+**Atributos**
+- veiculo: Veiculo,
+- imovel: Imovel,
+- lanceInicial: float
+- incrementoMinimo: float
+- lances: ```List<Lances>```
+- dataLimite: Date
+- instituicaoFinanceira: Financeira
+- status: String
+**Métodos**
+- listaProdutos()
+- buscaPorChave()
+- buscaPorValor()
+- buscaPorTipo() 
+- exportarDET()
+- darLance()
+- historicoLances()
+
+### Lance
+Classe comum
+**Atributos**
+- incremento: float
+- leilao: Leilao
+- horario: Date
+
+### Usuario
+Classe comum
+**Atributos**
+- nome: String
+- cpf: String
+- nascimento: String
+- senha: String
+
+### Leiloeiro
+Classe comum
+**Atributos**
+-  
