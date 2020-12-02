@@ -8,17 +8,25 @@ public class Carro extends Veiculo{
 	private int portas;
 	@Getter @Setter
 	private int aroRoda;
-	@Getter @Setter
+	@Setter
 	private boolean arCondicionado;
-	@Getter @Setter
+	@Setter
 	private boolean direcaoHidraulica;
 	
-	public Carro(String modelo, int ano, String placa, String combustivel, int cc, String cor, 
-			int portas, int aroRoda, boolean arCondicionado, boolean direcaoHidraulica) {
-		super(modelo, ano, placa, combustivel, cc, cor);
+	public Carro(String descricao, String modelo, int ano, String placa, String combustivel, int cc, String cor, 
+			double lanceMinimo, int portas, int aroRoda, boolean arCondicionado, boolean direcaoHidraulica) {
+		super(descricao, modelo, ano, placa, combustivel, cc, cor, lanceMinimo);
 		setPortas(portas);
 		setAroRoda(aroRoda);
 		setArCondicionado(arCondicionado);
 		setDirecaoHidraulica(direcaoHidraulica);
+	}
+	
+	public boolean getArCondicionado() {
+		return this.arCondicionado;
+	}
+	
+	public boolean getDirecaoHidraulica() {
+		return this.direcaoHidraulica;
 	}
 }

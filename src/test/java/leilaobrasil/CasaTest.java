@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class CasaTest {
 
-	Casa casa = new Casa("Rua Foo, 95", 180000.00, "Casa Foo, Cidade Boo", "1867481911.8519", 100.00, 250.00, 4, false, 2);
+	Casa casa = new Casa("Rua Foo, 95", 180000.00, "Casa Foo, Cidade Boo", "1867481911.8519", 50000,100.00, 250.00, 4, false, 2);
 	
 	@Test
 	public void testCasa() {

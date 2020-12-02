@@ -6,7 +6,7 @@ import org.junit.Test;
 
 public class TerrenoTest {
 
-	Terreno terreno = new Terreno("Rua Foo, 95", 180000.00, "Casa Foo, Cidade Boo", "1867481911.8519", 250.00, false, "F1", "Urbana");
+	Terreno terreno = new Terreno("Rua Foo, 95", 180000.00, "Casa Foo, Cidade Boo", "1867481911.8519", 50000, 250.00, false, "F1", "Urbana");
 	
 	@Test
 	public void testCasa() {

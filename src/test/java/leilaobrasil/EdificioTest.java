@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class EdificioTest {
 
-	Edificio edificio = new Edificio("Rua Foo, 95", 180000.00, "Casa Foo, Cidade Boo", "1867481911.8519", 20, true, 80);
+	Edificio edificio = new Edificio("Rua Foo, 95", 180000.00, "Casa Foo, Cidade Boo", "1867481911.8519",50000, 20, true, 80);
 	
 	@Test
 	public void testCasa() {

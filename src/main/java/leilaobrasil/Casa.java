@@ -11,18 +11,24 @@ public class Casa extends Imovel{
 	private double area;
 	@Getter @Setter
 	private int comodos;
-	@Getter @Setter
+	@Setter
 	private boolean piscina;
 	@Getter @Setter
 	private int garagem;
 
 	public Casa(String endereco, double preco, String descricao, String inscricaoMunicipal,
-				double areaConstruida, double area, int comodos, boolean piscina, int garagem) {
-		super(endereco, preco, descricao, inscricaoMunicipal);
+				double lanceMinimo, double areaConstruida, double area, int comodos, boolean piscina,
+				int garagem) {
+		super(endereco, preco, descricao, inscricaoMunicipal, lanceMinimo);
 		setAreaConstruida(areaConstruida);
 		setArea(area);
 		setComodos(comodos);
 		setPiscina(piscina);
 		setGaragem(garagem);
 	}
+	
+	public boolean getPiscina(){
+		return this.piscina;
+	}
+	
 }

@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class CarroTest {
 	
-	Carro carro = new Carro("Uno", 1991, "BHN2662", "Gasolina", 1000, "Cinza", 4, 13, false, false);
+	Carro carro = new Carro("CarroConservado","Uno", 1991, "BHN2662", "Gasolina", 1000, "Cinza", 50000, 4, 13, false, false);
 
 	@Test
 	public void testCarro() {

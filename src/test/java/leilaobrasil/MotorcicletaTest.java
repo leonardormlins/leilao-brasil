@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class MotorcicletaTest {
 	
-	Motorcicleta moto = new Motorcicleta("Falcon", 2005, "AQS2162", "Flex", 800, "Cinza", 17, true);
+	Motorcicleta moto = new Motorcicleta("MotoConservada","Falcon", 2005, "AQS2162", "Flex", 800, "Cinza", 50000, 17, true);
 
 	@Test
 	public void testMoto() {

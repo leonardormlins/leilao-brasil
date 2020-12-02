@@ -7,16 +7,20 @@ public class Edificio extends Imovel {
 	
 	@Getter @Setter
 	private int andares;
-	@Getter @Setter
+	@Setter
 	private boolean comercial;
 	@Getter @Setter
 	private int numeroSalas;
 	
 	public Edificio(String endereco, double preco, String descricao, String inscricaoMunicipal,
-					int andares, boolean comercial, int numeroSalas) {
-		super(endereco, preco, descricao, inscricaoMunicipal);
+					double lanceMinimo, int andares, boolean comercial, int numeroSalas) {
+		super(endereco, preco, descricao, inscricaoMunicipal, lanceMinimo);
 		setAndares(andares);
 		setComercial(comercial);
 		setNumeroSalas(numeroSalas);
+	}
+	
+	public boolean getComercial() {
+		return this.comercial;
 	}
 }
